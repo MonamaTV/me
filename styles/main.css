@@ -11,7 +11,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  background: rgb(9, 31, 29);
+  background: #091f1d;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
@@ -43,7 +43,7 @@ html {
   flex: 3;
   padding: 50px 20px;
   margin-left: 45vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .side-menu ul {
@@ -62,19 +62,22 @@ html {
 
 .social-links {
   display: flex;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .social-links a {
   margin-right: 20px;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #fff;
+}
+.about {
+  margin-top: 25px;
 }
 .about,
 .experience,
 .portfolio {
-  margin-top: 25px;
   height: 100vh;
+  scroll-snap-align: start;
   padding: 10px;
 }
 
@@ -95,7 +98,6 @@ html {
   color: #fff;
   background: #ff6b6b;
   padding: 10px 20px;
-  border-radius: 5px;
   width: 200px;
   text-align: center;
 }
@@ -128,15 +130,14 @@ html {
 
 .card {
   display: flex;
-  gap: 10px;
-  /* padding-top: 20px; */
+  gap: 20px;
   align-items: start;
-  /* margin-bottom: 5px; */
   height: 150px;
+  margin-bottom: 10px;
 }
 
 .card img {
-  width: 200px;
+  width: 220px;
   object-fit: contain;
 }
 
@@ -153,9 +154,46 @@ html {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 12px;
   color: #a77e7e;
+}
+
+.tech-stack .tech {
+  background: #a77e7e;
+  color: #fff;
+  padding: 1px 3px;
+}
+
+.contact-me {
+  margin-top: 100px;
+  height: 80vh;
+  align-items: center;
+}
+
+.contact-me input,
+.contact-me textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background: #3333333d;
+  color: #fff;
+  font-family: "Poppins", serif;
+  outline: none;
+  resize: none;
+}
+.contact-me button {
+  padding: 10px 20px;
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-me h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 /* Let us take of the mobile view... side note: I should have went with the mobile first approach */
@@ -171,7 +209,6 @@ html {
 
     padding: 20px;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .side-menu ul {
