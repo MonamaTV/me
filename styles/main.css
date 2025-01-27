@@ -157,3 +157,90 @@ html {
   font-size: 12px;
   color: #a77e7e;
 }
+
+/* Let us take of the mobile view... side note: I should have went with the mobile first approach */
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-menu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .side-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .main-content {
+    height: 100vh;
+    margin-left: 0;
+    padding: 20px;
+  }
+  .side-menu h1 {
+    margin-top: 200px;
+    font-size: 2rem;
+  }
+  .side-menu * {
+    padding: 5px 10px;
+  }
+  .side-menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .side-menu ul li a {
+    font-size: 0.8rem;
+  }
+  .social-links {
+    margin-top: 0;
+  }
+  .social-links a {
+    margin-right: 10px;
+  }
+  .about p {
+    font-size: 12px;
+  }
+  .experience .job {
+    margin-bottom: 10px;
+  }
+  .job p {
+    font-size: 14px;
+  }
+  .job h4 {
+    font-size: 18px;
+  }
+  .job ul {
+    margin-left: 20px;
+  }
+  .job ul li {
+    font-size: 12px;
+  }
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card-content h4 {
+    font-size: 16px;
+  }
+  .tech-stack {
+    font-size: 10px;
+  }
+  .call-to-action a {
+    width: 150px;
+    padding: 10px 10px;
+  }
+}
