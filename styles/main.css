@@ -11,7 +11,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  background: #051d02;
+  background: rgb(9, 31, 29);
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
@@ -79,21 +79,81 @@ html {
 }
 
 .about p {
-  margin: 20px 0;
-  font-size: 1rem;
+  margin: 0px 0 30px 0px;
   line-height: 1.7;
+  font-size: 14px;
+  color: rgb(165, 165, 165);
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.call-to-action a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff6b6b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
 }
 
 .experience .job {
   margin-bottom: 20px;
 }
-.experience .job * {
-  margin-bottom: 5px;
+
+.job p {
+  color: rgb(165, 165, 165);
+  font-size: 16px;
+}
+
+.job a {
+  color: #ff6b6b;
+}
+.job h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.job ul {
+  margin-left: 25px;
+}
+
+.job ul li {
+  font-size: 13px;
+  color: rgb(165, 165, 165);
 }
 
 .card {
   display: flex;
+  gap: 10px;
+  /* padding-top: 20px; */
+  align-items: start;
+  /* margin-bottom: 5px; */
+  height: 150px;
 }
+
 .card img {
   width: 200px;
+  object-fit: contain;
+}
+
+.card p {
+  font-size: 13px;
+  color: rgb(165, 165, 165);
+}
+
+.card-content h4 {
+  font-size: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #a77e7e;
 }
