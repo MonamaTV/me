@@ -31,7 +31,6 @@ html {
   display: flex;
   margin-top: 100px;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .side-menu h1 {
@@ -39,6 +38,10 @@ html {
   margin-bottom: 20px;
   font-weight: 800;
   color: #fff;
+}
+
+.side-menu p {
+  font-size: 10px;
 }
 
 .main-content {
@@ -132,6 +135,21 @@ html {
   padding: 20px 10px;
   align-items: start;
   margin-block: 15px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+.portfolio h3 {
+  font-size: 0.6em;
+  padding: 0 10px;
+  text-decoration: underline;
+  /* margin-bottom: 20px; */
 }
 
 .card:hover {
