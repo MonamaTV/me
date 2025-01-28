@@ -10,11 +10,11 @@ body,
 html {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
   background: #091f1d;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
+  color: rgb(165, 165, 165);
 }
 
 .container {
@@ -29,14 +29,16 @@ html {
   height: 80vh;
   padding: 0 50px;
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .side-menu h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 800;
+  color: #fff;
 }
 
 .main-content {
@@ -70,13 +72,11 @@ html {
   /* text-decoration: none; */
   color: #fff;
 }
-.about {
-  margin-top: 25px;
-}
+
 .about,
 .experience,
 .portfolio {
-  height: 100vh;
+  margin-block: 50px;
   scroll-snap-align: start;
   padding: 10px;
 }
@@ -85,7 +85,6 @@ html {
   margin: 0px 0 30px 0px;
   line-height: 1.7;
   font-size: 14px;
-  color: rgb(165, 165, 165);
 }
 
 .call-to-action {
@@ -130,10 +129,13 @@ html {
 
 .card {
   display: flex;
-  gap: 20px;
+  padding: 20px 10px;
   align-items: start;
-  height: 150px;
-  margin-bottom: 10px;
+  margin-block: 15px;
+}
+
+.card:hover {
+  background-color: #19978c25;
 }
 
 .card img {
@@ -147,6 +149,7 @@ html {
 }
 
 .card-content h4 {
+  color: #fff;
   font-size: 20px;
 }
 
@@ -198,7 +201,7 @@ html {
 
 /* Let us take of the mobile view... side note: I should have went with the mobile first approach */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
