@@ -217,6 +217,9 @@ html {
   margin-bottom: 20px;
 }
 
+.weather {
+  margin-top: 50px;
+}
 /* Let us take of the mobile view... side note: I should have went with the mobile first approach */
 
 @media screen and (max-width: 1024px) {
